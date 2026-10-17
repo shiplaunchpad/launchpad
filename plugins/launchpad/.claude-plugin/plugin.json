@@ -1,0 +1,9 @@
+{
+  "name": "launchpad",
+  "description": "Take any app from \"it runs on my machine\" to shipped — detect every surface, wire CI/CD, signing, distribution, paywalls and a landing page, and score what's still missing.",
+  "version": "0.1.22",
+  "author": {
+    "name": "Siddharth Karia",
+    "url": "https://github.com/sidkaria/launchpad"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "version": "0.1.22",
+  "channel": "release",
+  "files": 16,
+  "built": "2026-10-17T01:04:41.840Z",
+  "bundle": {
+    "path": "plugins/launchpad/dist/launchpad.mjs",
+    "bytes": 55498,
+    "sha256": "b8ee4abd81394f9977a4f8415abc6880bf708816d2678c6cceb40c64de46f014"
+  },
+  "pack": {
+    "signing": "release",
+    "keyId": "32a8b5fd117588d4"
+  }
+}

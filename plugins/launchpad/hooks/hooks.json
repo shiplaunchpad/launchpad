@@ -1,0 +1,28 @@
+{
+  "description": "launchpad: tell an open Claude session what changed in Mission Control since its last step (one line; silent otherwise).",
+  "hooks": {
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "[ -f \"${CLAUDE_PLUGIN_ROOT}/dist/launchpad.mjs\" ] && node \"${CLAUDE_PLUGIN_ROOT}/dist/launchpad.mjs\" session-sync --hook || true",
+            "timeout": 5
+          }
+        ]
+      }
+    ],
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "[ -f \"${CLAUDE_PLUGIN_ROOT}/dist/launchpad.mjs\" ] && node \"${CLAUDE_PLUGIN_ROOT}/dist/launchpad.mjs\" session-sync --hook || true",
+            "timeout": 5
+          }
+        ]
+      }
+    ]
+  }
+}

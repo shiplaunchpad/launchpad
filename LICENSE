@@ -1,0 +1,19 @@
+launchpad — proprietary software
+Copyright (c) 2026 Siddharth Karia. All rights reserved.
+
+This repository holds the launchpad plugin loader: the plugin and marketplace
+manifests, the skill loaders, and a bootstrap that activates a licence key and
+installs launchpad on your machine. Installing it is free. Running launchpad
+needs a licence key, bought once from the checkout linked in README.md, and
+your use of it is governed by the terms presented at that checkout.
+
+You may install this plugin and read anything it installs on your own machine.
+You may not copy, redistribute, resell or publish this package, the licensed
+pack it installs, or any part of either, except as those terms allow.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, TO THE EXTENT
+THE LAW WHERE YOU LIVE ALLOWS. Nothing here limits rights you have as a consumer
+that cannot be limited by contract.
+
+Sales are final. Support, and what it does when something goes wrong: see
+"Sales and support" in README.md.

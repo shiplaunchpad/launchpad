@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "version": "0.1.22",
+  "published": "2026-10-16",
+  "summary": "launchpad is on sale. Point it at your app and it gets it live, secure and measured.",
+  "notes": [
+    "Activate your key once: launchpad downloads the full product for your version and checks its signature before it runs.",
+    "Mission Control shows every app on one screen: the one next step, builds, testers, uptime, traffic, crashes and costs.",
+    "iPhone apps build on your own Mac and reach TestFlight, and launchpad drafts your App Store listing for you to approve.",
+    "Web apps and sites deploy on every push, set up so search engines and AI assistants can find them.",
+    "A key works on two machines and keeps working offline. You choose when to update; it never updates itself."
+  ],
+  "minimum": "0.1.22",
+  "criticalBelow": "0.1.22",
+  "channels": {
+    "release": {
+      "version": "0.1.22",
+      "published": "2026-10-16",
+      "summary": "launchpad is on sale. Point it at your app and it gets it live, secure and measured.",
+      "notes": [
+        "Activate your key once: launchpad downloads the full product for your version and checks its signature before it runs.",
+        "Mission Control shows every app on one screen: the one next step, builds, testers, uptime, traffic, crashes and costs.",
+        "iPhone apps build on your own Mac and reach TestFlight, and launchpad drafts your App Store listing for you to approve.",
+        "Web apps and sites deploy on every push, set up so search engines and AI assistants can find them.",
+        "A key works on two machines and keeps working offline. You choose when to update; it never updates itself."
+      ],
+      "minimum": "0.1.22"
+    },
+    "beta": {
+      "version": "0.1.21",
+      "published": "2026-10-12",
+      "summary": "Every card shows one clear way to do it, and new versions arrive as a proper update window.",
+      "notes": [
+        "Each to-do shows the quickest way first; other ways sit under one fold, each marked as an alternative.",
+        "A card launchpad can do itself says so, with one Do it button.",
+        "New versions open a window with the release notes and Update now, Later or Skip this version.",
+        "A newer update is never hidden behind an older notice.",
+        "Buys through a test checkout: you are not charged."
+      ]
+    }
+  }
+}
