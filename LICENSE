@@ -5,7 +5,7 @@ This repository holds the launchpad plugin loader: the plugin and marketplace
 manifests, the skill loaders, and a bootstrap that activates a licence key and
 installs launchpad on your machine. Installing it is free. Running launchpad
 needs a licence key, bought once from the checkout linked in README.md, and
-your use of it is governed by the terms presented at that checkout.
+your use of it is governed by the terms at https://shiplaunchpad.com/terms/.
 
 You may install this plugin and read anything it installs on your own machine.
 You may not copy, redistribute, resell or publish this package, the licensed

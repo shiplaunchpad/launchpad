@@ -17,7 +17,8 @@ description: Ship a new version of a launchpad-managed app — bump the version,
    safe in public, and a transcript quoting the value throws that away. An
    exposed key is fixed by rotating it, never by displaying it. **Never ask
    for a value in chat either:** a key goes in through Mission Control's key
-   field or `launchpad secret set <name>` in the user's own terminal.
+   field, or the `secret set` command `needs` prints for it, run in the
+   user's own terminal exactly as printed.
 2. **"It's broken" / "it's not working" / "help" → `report` first.** Run
    `node "${CLAUDE_PLUGIN_ROOT}/dist/launchpad.mjs" report`, or ask the user to
    run it and paste the output, before any diagnostic question. One paste
@@ -60,6 +61,12 @@ description: Ship a new version of a launchpad-managed app — bump the version,
    fixed, and raise it for this session with `ask add` only if a choice is
    theirs. Never a step that says "send `launchpad report`" or "once launchpad's
    check is fixed" — that is launchpad's chore, not theirs.
+6. **A command for the owner runs as printed.** `launchpad` is not on their
+   PATH: never a bare `launchpad …`. Mission Control first, then a slash
+   command, then a request to you; else the full command exactly as printed.
+7. **`.launchpad/state.yml` is written by launchpad, never by hand.** A
+   setting: `config set <surface> <key> <value>`; an answer: `questions
+   answer`, `confirm`, `change … --write`. Never an edit, never a script.
 <!-- /launchpad:standing-rules -->
 
 ## Load the instructions

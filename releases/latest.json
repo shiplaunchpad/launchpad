@@ -1,28 +1,28 @@
 {
   "schema": 1,
-  "version": "0.1.22",
-  "published": "2026-10-16",
-  "summary": "launchpad is on sale. Point it at your app and it gets it live, secure and measured.",
+  "version": "0.1.23",
+  "published": "2026-10-20",
+  "summary": "What's left is one number everywhere, every command runs as printed, and phone apps skip the jargon questions.",
   "notes": [
-    "Activate your key once: launchpad downloads the full product for your version and checks its signature before it runs.",
-    "Mission Control shows every app on one screen: the one next step, builds, testers, uptime, traffic, crashes and costs.",
-    "iPhone apps build on your own Mac and reach TestFlight, and launchpad drafts your App Store listing for you to approve.",
-    "Web apps and sites deploy on every push, set up so search engines and AI assistants can find them.",
-    "A key works on two machines and keeps working offline. You choose when to update; it never updates itself."
+    "What's left is one number, the same in every command and in Mission Control, with a new After you group for the steps launchpad finishes once you've done yours.",
+    "Every command launchpad gives you runs exactly as printed, as a slash command in Claude Code or in a terminal.",
+    "For phone apps, launchpad proposes your app's ID and reads your Firebase values itself instead of asking for them.",
+    "Before the first apply, you see every file it will create or change, and it asks you once.",
+    "A key that is no longer active says so plainly, with what to send to support."
   ],
   "minimum": "0.1.22",
   "criticalBelow": "0.1.22",
   "channels": {
     "release": {
-      "version": "0.1.22",
-      "published": "2026-10-16",
-      "summary": "launchpad is on sale. Point it at your app and it gets it live, secure and measured.",
+      "version": "0.1.23",
+      "published": "2026-10-20",
+      "summary": "What's left is one number everywhere, every command runs as printed, and phone apps skip the jargon questions.",
       "notes": [
-        "Activate your key once: launchpad downloads the full product for your version and checks its signature before it runs.",
-        "Mission Control shows every app on one screen: the one next step, builds, testers, uptime, traffic, crashes and costs.",
-        "iPhone apps build on your own Mac and reach TestFlight, and launchpad drafts your App Store listing for you to approve.",
-        "Web apps and sites deploy on every push, set up so search engines and AI assistants can find them.",
-        "A key works on two machines and keeps working offline. You choose when to update; it never updates itself."
+        "What's left is one number, the same in every command and in Mission Control, with a new After you group for the steps launchpad finishes once you've done yours.",
+        "Every command launchpad gives you runs exactly as printed, as a slash command in Claude Code or in a terminal.",
+        "For phone apps, launchpad proposes your app's ID and reads your Firebase values itself instead of asking for them.",
+        "Before the first apply, you see every file it will create or change, and it asks you once.",
+        "A key that is no longer active says so plainly, with what to send to support."
       ],
       "minimum": "0.1.22"
     },
