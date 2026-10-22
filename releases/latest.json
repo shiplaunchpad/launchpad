@@ -1,28 +1,28 @@
 {
   "schema": 1,
-  "version": "0.1.23",
-  "published": "2026-10-20",
-  "summary": "What's left is one number everywhere, every command runs as printed, and phone apps skip the jargon questions.",
+  "version": "0.1.24",
+  "published": "2026-10-21",
+  "summary": "Your app's paywall now looks like one people pay from, and you can test a real purchase before you ship.",
   "notes": [
-    "What's left is one number, the same in every command and in Mission Control, with a new After you group for the steps launchpad finishes once you've done yours.",
-    "Every command launchpad gives you runs exactly as printed, as a slash command in Claude Code or in a terminal.",
-    "For phone apps, launchpad proposes your app's ID and reads your Firebase values itself instead of asking for them.",
-    "Before the first apply, you see every file it will create or change, and it asks you once.",
-    "A key that is no longer active says so plainly, with what to send to support."
+    "The paywall shows what Pro gives you, your plans as cards with \"Save N%\" when it's real, one Continue button, Close, and Manage subscription.",
+    "It matches your app's own colors, fonts and dark mode on iPhone and Android, and prices show the billing period and trial the stores require.",
+    "Test a purchase end to end with RevenueCat's Test Store in debug builds. Release builds never carry the test key.",
+    "Expo apps no longer crash on launch when the RevenueCat key is missing or wrong.",
+    "A wrong key, a failed purchase and a network problem each say what actually happened."
   ],
   "minimum": "0.1.22",
   "criticalBelow": "0.1.22",
   "channels": {
     "release": {
-      "version": "0.1.23",
-      "published": "2026-10-20",
-      "summary": "What's left is one number everywhere, every command runs as printed, and phone apps skip the jargon questions.",
+      "version": "0.1.24",
+      "published": "2026-10-21",
+      "summary": "Your app's paywall now looks like one people pay from, and you can test a real purchase before you ship.",
       "notes": [
-        "What's left is one number, the same in every command and in Mission Control, with a new After you group for the steps launchpad finishes once you've done yours.",
-        "Every command launchpad gives you runs exactly as printed, as a slash command in Claude Code or in a terminal.",
-        "For phone apps, launchpad proposes your app's ID and reads your Firebase values itself instead of asking for them.",
-        "Before the first apply, you see every file it will create or change, and it asks you once.",
-        "A key that is no longer active says so plainly, with what to send to support."
+        "The paywall shows what Pro gives you, your plans as cards with \"Save N%\" when it's real, one Continue button, Close, and Manage subscription.",
+        "It matches your app's own colors, fonts and dark mode on iPhone and Android, and prices show the billing period and trial the stores require.",
+        "Test a purchase end to end with RevenueCat's Test Store in debug builds. Release builds never carry the test key.",
+        "Expo apps no longer crash on launch when the RevenueCat key is missing or wrong.",
+        "A wrong key, a failed purchase and a network problem each say what actually happened."
       ],
       "minimum": "0.1.22"
     },
