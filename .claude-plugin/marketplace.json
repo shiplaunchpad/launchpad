@@ -6,7 +6,7 @@
       "name": "launchpad",
       "source": "./plugins/launchpad",
       "description": "Take an app from \"it runs on my machine\" to shipped: detect every surface, wire CI/CD, signing and distribution, and score what is still missing.",
-      "version": "0.1.24"
+      "version": "0.1.25"
     }
   ]
 }
