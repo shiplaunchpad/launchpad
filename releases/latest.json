@@ -1,28 +1,24 @@
 {
   "schema": 1,
-  "version": "0.1.25",
-  "published": "2026-10-22",
-  "summary": "Choose what launchpad sets up, change any answer, and see what usage-priced tools really cost for your app.",
+  "version": "0.1.26",
+  "published": "2026-10-23",
+  "summary": "launchpad asks once, in Mission Control, before it sends any usage counts of its own.",
   "notes": [
-    "See everything launchpad sets up and switch any of it off; what depended on it goes too, and your privacy policy and Apple's answers follow.",
-    "Every answer stays editable: go back to any question and change it, and Mission Control updates everything that depended on it.",
-    "No domain yet? Pick from names that are actually free, each with a Buy button.",
-    "Usage-priced tools show a realistic monthly estimate for your app, in minutes and dollars, behind a small info button.",
-    "A shorter first reply in onboarding, cards with direct links, and the update window helps when Claude Code is missing launchpad's marketplace."
+    "After your first app's questions, Mission Control asks once whether to send launchpad's own anonymous usage counts. Nothing is sent until you turn them on.",
+    "The window lists exactly what is sent and what never is, and you can change your answer any time at the bottom of the sidebar.",
+    "Not now asks once more a week later; Don't ask again means never. Claude no longer asks about it in chat."
   ],
   "minimum": "0.1.22",
   "criticalBelow": "0.1.22",
   "channels": {
     "release": {
-      "version": "0.1.25",
-      "published": "2026-10-22",
-      "summary": "Choose what launchpad sets up, change any answer, and see what usage-priced tools really cost for your app.",
+      "version": "0.1.26",
+      "published": "2026-10-23",
+      "summary": "launchpad asks once, in Mission Control, before it sends any usage counts of its own.",
       "notes": [
-        "See everything launchpad sets up and switch any of it off; what depended on it goes too, and your privacy policy and Apple's answers follow.",
-        "Every answer stays editable: go back to any question and change it, and Mission Control updates everything that depended on it.",
-        "No domain yet? Pick from names that are actually free, each with a Buy button.",
-        "Usage-priced tools show a realistic monthly estimate for your app, in minutes and dollars, behind a small info button.",
-        "A shorter first reply in onboarding, cards with direct links, and the update window helps when Claude Code is missing launchpad's marketplace."
+        "After your first app's questions, Mission Control asks once whether to send launchpad's own anonymous usage counts. Nothing is sent until you turn them on.",
+        "The window lists exactly what is sent and what never is, and you can change your answer any time at the bottom of the sidebar.",
+        "Not now asks once more a week later; Don't ask again means never. Claude no longer asks about it in chat."
       ],
       "minimum": "0.1.22"
     },
