@@ -1,24 +1,28 @@
 {
   "schema": 1,
-  "version": "0.1.26",
-  "published": "2026-10-23",
-  "summary": "launchpad asks once, in Mission Control, before it sends any usage counts of its own.",
+  "version": "0.1.27",
+  "published": "2026-10-30",
+  "summary": "Every to-do says what to do, has one main button, and speaks your app's language.",
   "notes": [
-    "After your first app's questions, Mission Control asks once whether to send launchpad's own anonymous usage counts. Nothing is sent until you turn them on.",
-    "The window lists exactly what is sent and what never is, and you can change your answer any time at the bottom of the sidebar.",
-    "Not now asks once more a week later; Don't ask again means never. Claude no longer asks about it in chat."
+    "Each to-do is titled by what you do (\"Add a Vercel token so every push deploys your site\") and has one main button, the same on the list and in its panel.",
+    "A Mac or web app is no longer told about iPhones, TestFlight, Google Play or store listings. Steps for a store show only if your app is in it.",
+    "launchpad writes your privacy policy and terms itself, so it no longer asks you to check pages that don't exist yet.",
+    "If Apple is waiting for you to accept an updated agreement, Mission Control says so in Apple's words, and the card clears once you accept.",
+    "Release with one Approve, add TestFlight testers by email, and see each build on Testing & builds."
   ],
   "minimum": "0.1.22",
   "criticalBelow": "0.1.22",
   "channels": {
     "release": {
-      "version": "0.1.26",
-      "published": "2026-10-23",
-      "summary": "launchpad asks once, in Mission Control, before it sends any usage counts of its own.",
+      "version": "0.1.27",
+      "published": "2026-10-30",
+      "summary": "Every to-do says what to do, has one main button, and speaks your app's language.",
       "notes": [
-        "After your first app's questions, Mission Control asks once whether to send launchpad's own anonymous usage counts. Nothing is sent until you turn them on.",
-        "The window lists exactly what is sent and what never is, and you can change your answer any time at the bottom of the sidebar.",
-        "Not now asks once more a week later; Don't ask again means never. Claude no longer asks about it in chat."
+        "Each to-do is titled by what you do (\"Add a Vercel token so every push deploys your site\") and has one main button, the same on the list and in its panel.",
+        "A Mac or web app is no longer told about iPhones, TestFlight, Google Play or store listings. Steps for a store show only if your app is in it.",
+        "launchpad writes your privacy policy and terms itself, so it no longer asks you to check pages that don't exist yet.",
+        "If Apple is waiting for you to accept an updated agreement, Mission Control says so in Apple's words, and the card clears once you accept.",
+        "Release with one Approve, add TestFlight testers by email, and see each build on Testing & builds."
       ],
       "minimum": "0.1.22"
     },

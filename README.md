@@ -65,6 +65,17 @@ claude plugin marketplace add shiplaunchpad/launchpad
 claude plugin install launchpad@launchpad
 ```
 
+In VS Code's Claude Code panel, plugins are added from its own plugin manager. Paste this link into your browser's
+address bar: VS Code opens the manager, asks to add launchpad's marketplace, then where to install it (choose your user).
+
+```
+vscode://anthropic.claude-code/install-plugin?plugin=launchpad&marketplace=shiplaunchpad/launchpad
+```
+
+Or type `/plugins` in the panel, add `shiplaunchpad/launchpad` on the Marketplaces tab, then press Install next to
+launchpad on the Plugins tab. In the Claude desktop app, or when neither shows up, run the two terminal lines above:
+every Claude Code you use on this computer then has launchpad.
+
 Installing costs nothing, and nothing runs until you
 activate a key. Installed inside Claude Code, the `/launchpad:` commands work at once. Installed from a terminal while
 Claude Code is open, type `/reload-plugins` in Claude Code first.
