@@ -1,28 +1,28 @@
 {
   "schema": 1,
-  "version": "0.1.27",
-  "published": "2026-10-30",
-  "summary": "Every to-do says what to do, has one main button, and speaks your app's language.",
+  "version": "0.1.28",
+  "published": "2026-11-01",
+  "summary": "Fewer false alarms, no broken Android builds, and launchpad finds your apps and keeps the tools they already use.",
   "notes": [
-    "Each to-do is titled by what you do (\"Add a Vercel token so every push deploys your site\") and has one main button, the same on the list and in its panel.",
-    "A Mac or web app is no longer told about iPhones, TestFlight, Google Play or store listings. Steps for a store show only if your app is in it.",
-    "launchpad writes your privacy policy and terms itself, so it no longer asks you to check pages that don't exist yet.",
-    "If Apple is waiting for you to accept an updated agreement, Mission Control says so in Apple's words, and the card clears once you accept.",
-    "Release with one Approve, add TestFlight testers by email, and see each build on Testing & builds."
+    "Android apps keep building when the review prompt is added, and native iOS apps get their scheme, team and version from the project, with no questions.",
+    "If your app already uses Sentry, Plausible or its own review prompt, launchpad keeps it instead of adding a second one.",
+    "No more alarms for what you already have: a privacy policy you link to, signing on CI, an app on Google Play, a version past 1.0.",
+    "Mission Control opens fast after a break, lists accounts before the keys made in them, and asks before using a template's Apple team.",
+    "Mac apps get usage analytics too, and Later on the update window now waits a week."
   ],
   "minimum": "0.1.22",
   "criticalBelow": "0.1.22",
   "channels": {
     "release": {
-      "version": "0.1.27",
-      "published": "2026-10-30",
-      "summary": "Every to-do says what to do, has one main button, and speaks your app's language.",
+      "version": "0.1.28",
+      "published": "2026-11-01",
+      "summary": "Fewer false alarms, no broken Android builds, and launchpad finds your apps and keeps the tools they already use.",
       "notes": [
-        "Each to-do is titled by what you do (\"Add a Vercel token so every push deploys your site\") and has one main button, the same on the list and in its panel.",
-        "A Mac or web app is no longer told about iPhones, TestFlight, Google Play or store listings. Steps for a store show only if your app is in it.",
-        "launchpad writes your privacy policy and terms itself, so it no longer asks you to check pages that don't exist yet.",
-        "If Apple is waiting for you to accept an updated agreement, Mission Control says so in Apple's words, and the card clears once you accept.",
-        "Release with one Approve, add TestFlight testers by email, and see each build on Testing & builds."
+        "Android apps keep building when the review prompt is added, and native iOS apps get their scheme, team and version from the project, with no questions.",
+        "If your app already uses Sentry, Plausible or its own review prompt, launchpad keeps it instead of adding a second one.",
+        "No more alarms for what you already have: a privacy policy you link to, signing on CI, an app on Google Play, a version past 1.0.",
+        "Mission Control opens fast after a break, lists accounts before the keys made in them, and asks before using a template's Apple team.",
+        "Mac apps get usage analytics too, and Later on the update window now waits a week."
       ],
       "minimum": "0.1.22"
     },
