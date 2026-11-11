@@ -30,11 +30,11 @@ launchpad ships six kinds of app — iOS app, Android app, macOS app (DMG), Web 
 | Expo | iOS app + Android app | TestFlight and the App Store for iOS; Firebase App Distribution for Android — or, on EAS Build, EAS's install links and its submission to both stores. |
 | Cloudflare Worker | Backend service | Cloudflare Workers — a deploy on every push, staging as its own Worker, and its own cron triggers and queues. |
 | Hono, itty-router | Backend service | Cloudflare Workers or Google Cloud Run |
-| Express, Fastify, NestJS, Koa, hapi, Go HTTP server, Python web service, Containerised service | Backend service | Google Cloud Run |
+| Express, Fastify, NestJS, Koa, hapi, Elysia, Go HTTP server, Python web service, Containerised service | Backend service | Google Cloud Run |
 
 Where a stack has a limit, `/launchpad:status` says so for your app.
 
-**Recognised, with no pipeline yet.** launchpad scores these and shows them on Mission Control, and says that it has no pipeline to write: Tauri desktop app, Electron desktop app, Swift package, Ruby on Rails app, Django app, WordPress site, Laravel app, Phoenix app, Elixir project, Rust project, Go project, Python package, Ruby gem, .NET project, JVM project, Deno app, Browser extension, Node CLI, Node package.
+**Recognised, with no pipeline yet.** launchpad scores these and shows them on Mission Control, and says that it has no pipeline to write: Tauri desktop app, Electron desktop app, Swift package, Ruby on Rails app, Django app, WordPress site, Laravel app, Phoenix app, Elixir project, Rust project, Go project, Python package, Ruby gem, .NET project, JVM project, Deno app, Wasp app, Browser extension, Node CLI, Node package.
 
 **Not supported yet:** Capacitor / Ionic.
 <!-- launchpad:platforms:end -->
@@ -132,7 +132,7 @@ and why launchpad made each choice it made.
 launchpad sends three things to us or our payment provider (the landing page and the privacy page print the same list):
 
 1. **An update check.** This happens at most once a day, and whenever you ask. It sends nothing about you. It reads one public file on our site, the list of releases, the same way a browser does.
-2. **A license check.** This happens when you activate your key, about once a day while you use launchpad, and when Claude opens one of its instructions. It sends your key to the payment provider to confirm it. It also sends this computer's name and a short one-way code made from its id to the payment provider when you activate, so you and support can tell which computers use the key. It sends your key, this computer's activation, a one-way code made from this computer's id and the version to our license server. Our license server sends launchpad, and each instruction Claude opens, only to the computer your key is on. It never sends your code or your files.
+2. **A license check.** This happens when you activate your key, about once a day while you use launchpad, and when Claude opens one of its instructions. It sends your key to our license server, which passes it to the payment provider to confirm it, or to the payment provider directly when our server can't be reached. It also sends this computer's name and a short one-way code made from its id the same way when you activate, so you and support can tell which computers use the key. It sends your key, this computer's activation, a one-way code made from this computer's id and the version to our license server. Our license server sends launchpad, and each instruction Claude opens, only to the computer your key is on. It never sends your code or your files.
 3. **launchpad's own usage analytics.** This happens only if you said yes, at the end of setting up a project. It sends anonymous usage analytics about launchpad to our license server. They list the stacks launchpad found and the checklist items that worked. They never contain your code, names or paths. You can turn them off again whenever you like. In Claude Code, ask Claude to turn them off.
 <!-- launchpad:outbound:end -->
 

@@ -1,28 +1,28 @@
 {
   "schema": 1,
-  "version": "0.1.28",
-  "published": "2026-11-01",
-  "summary": "Fewer false alarms, no broken Android builds, and launchpad finds your apps and keeps the tools they already use.",
+  "version": "0.1.29",
+  "published": "2026-11-11",
+  "summary": "Six more launch checks read from your code, Apple's 15% program for apps that already sell, and real email checks.",
   "notes": [
-    "Android apps keep building when the review prompt is added, and native iOS apps get their scheme, team and version from the project, with no questions.",
-    "If your app already uses Sentry, Plausible or its own review prompt, launchpad keeps it instead of adding a second one.",
-    "No more alarms for what you already have: a privacy policy you link to, signing on CI, an app on Google Play, a version past 1.0.",
-    "Mission Control opens fast after a break, lists accounts before the keys made in them, and asks before using a template's Apple team.",
-    "Mac apps get usage analytics too, and Later on the update window now waits a week."
+    "Six more launch rules read from your code, like a session recorder running unasked or marketing texts with no opt-out. Each shows only when your app does it.",
+    "iPhone apps that already sell get Apple's Paid Apps and Small Business Program cards: pay 15% instead of 30%. You answer it once for all your apps.",
+    "If your app sends email, launchpad checks your domain's email records for real and tells you exactly what's missing.",
+    "Mission Control counts app opens and screens for phone and Mac apps, and shows crashes from every Sentry project, one line each.",
+    "Big repos with shared folders no longer show extra websites, and an Android or Xcode app one folder deeper is found."
   ],
   "minimum": "0.1.22",
   "criticalBelow": "0.1.22",
   "channels": {
     "release": {
-      "version": "0.1.28",
-      "published": "2026-11-01",
-      "summary": "Fewer false alarms, no broken Android builds, and launchpad finds your apps and keeps the tools they already use.",
+      "version": "0.1.29",
+      "published": "2026-11-11",
+      "summary": "Six more launch checks read from your code, Apple's 15% program for apps that already sell, and real email checks.",
       "notes": [
-        "Android apps keep building when the review prompt is added, and native iOS apps get their scheme, team and version from the project, with no questions.",
-        "If your app already uses Sentry, Plausible or its own review prompt, launchpad keeps it instead of adding a second one.",
-        "No more alarms for what you already have: a privacy policy you link to, signing on CI, an app on Google Play, a version past 1.0.",
-        "Mission Control opens fast after a break, lists accounts before the keys made in them, and asks before using a template's Apple team.",
-        "Mac apps get usage analytics too, and Later on the update window now waits a week."
+        "Six more launch rules read from your code, like a session recorder running unasked or marketing texts with no opt-out. Each shows only when your app does it.",
+        "iPhone apps that already sell get Apple's Paid Apps and Small Business Program cards: pay 15% instead of 30%. You answer it once for all your apps.",
+        "If your app sends email, launchpad checks your domain's email records for real and tells you exactly what's missing.",
+        "Mission Control counts app opens and screens for phone and Mac apps, and shows crashes from every Sentry project, one line each.",
+        "Big repos with shared folders no longer show extra websites, and an Android or Xcode app one folder deeper is found."
       ],
       "minimum": "0.1.22"
     },
