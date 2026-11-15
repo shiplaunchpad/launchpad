@@ -1,6 +1,17 @@
 {
-  "description": "launchpad: tell an open Claude session what changed in Mission Control since its last step (one line; silent otherwise).",
+  "description": "launchpad: tell an open Claude session what changed in Mission Control since its last step (one line; silent otherwise), and, on a free build, what is and is not on this computer.",
   "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "[ -f \"${CLAUDE_PLUGIN_ROOT}/dist/launchpad.mjs\" ] && node \"${CLAUDE_PLUGIN_ROOT}/dist/launchpad.mjs\" free-note --hook || true",
+            "timeout": 5
+          }
+        ]
+      }
+    ],
     "UserPromptSubmit": [
       {
         "hooks": [

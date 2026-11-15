@@ -1,28 +1,28 @@
 {
   "schema": 1,
-  "version": "0.1.29",
-  "published": "2026-11-11",
-  "summary": "Six more launch checks read from your code, Apple's 15% program for apps that already sell, and real email checks.",
+  "version": "0.1.30",
+  "published": "2026-11-14",
+  "summary": "launchpad makes your Cloudflare site itself, calls your app by its real name, and fixes iPhone and Android snags.",
   "notes": [
-    "Six more launch rules read from your code, like a session recorder running unasked or marketing texts with no opt-out. Each shows only when your app does it.",
-    "iPhone apps that already sell get Apple's Paid Apps and Small Business Program cards: pay 15% instead of 30%. You answer it once for all your apps.",
-    "If your app sends email, launchpad checks your domain's email records for real and tells you exactly what's missing.",
-    "Mission Control counts app opens and screens for phone and Mac apps, and shows crashes from every Sentry project, one line each.",
-    "Big repos with shared folders no longer show extra websites, and an Android or Xcode app one folder deeper is found."
+    "Storing a key no longer asks you to make up a passphrase on Windows or Linux. launchpad makes its own key for its vault.",
+    "For a static site, launchpad creates the Cloudflare Pages project with your token, and your first push publishes the site.",
+    "Your app shows up under its real name, from its page title, its Xcode project or its Android app name, instead of a folder called app.",
+    "iPhone apps: the app ID you pick is written into your Xcode project, and a release no longer runs Swift package tests that only build for iPhone.",
+    "Android: adding a tester finds the Firebase key you stored for that app, and the build check picks the right pnpm version for your repo."
   ],
   "minimum": "0.1.22",
   "criticalBelow": "0.1.22",
   "channels": {
     "release": {
-      "version": "0.1.29",
-      "published": "2026-11-11",
-      "summary": "Six more launch checks read from your code, Apple's 15% program for apps that already sell, and real email checks.",
+      "version": "0.1.30",
+      "published": "2026-11-14",
+      "summary": "launchpad makes your Cloudflare site itself, calls your app by its real name, and fixes iPhone and Android snags.",
       "notes": [
-        "Six more launch rules read from your code, like a session recorder running unasked or marketing texts with no opt-out. Each shows only when your app does it.",
-        "iPhone apps that already sell get Apple's Paid Apps and Small Business Program cards: pay 15% instead of 30%. You answer it once for all your apps.",
-        "If your app sends email, launchpad checks your domain's email records for real and tells you exactly what's missing.",
-        "Mission Control counts app opens and screens for phone and Mac apps, and shows crashes from every Sentry project, one line each.",
-        "Big repos with shared folders no longer show extra websites, and an Android or Xcode app one folder deeper is found."
+        "Storing a key no longer asks you to make up a passphrase on Windows or Linux. launchpad makes its own key for its vault.",
+        "For a static site, launchpad creates the Cloudflare Pages project with your token, and your first push publishes the site.",
+        "Your app shows up under its real name, from its page title, its Xcode project or its Android app name, instead of a folder called app.",
+        "iPhone apps: the app ID you pick is written into your Xcode project, and a release no longer runs Swift package tests that only build for iPhone.",
+        "Android: adding a tester finds the Firebase key you stored for that app, and the build check picks the right pnpm version for your repo."
       ],
       "minimum": "0.1.22"
     },
