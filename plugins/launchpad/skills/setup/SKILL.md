@@ -1,6 +1,6 @@
 ---
 name: setup
-description: Detect this repo's deployable surfaces (macOS app, iOS app, Android app, web app, static site) and wire/refresh its launchpad deployment pipeline, including a staging environment beside production. Use when the user wants to set up, onboard, or re-scan a project for deployment, get it building automatically or going out to testers, add a new surface (e.g. a website) to an existing project, set up payments (Stripe checkout and subscriptions on the web, in-app purchases through RevenueCat on iOS and Android), wants a staging environment or a separate staging and production copy, to stop testing in production, or to keep testers off real users' data, or asks "how do I ship this".
+description: Re-scan, extend or change a project's launchpad pipeline (Mac, iPhone, Android, web, static site; a first setup is /launchpad:onboard), including a staging environment beside production. Use when the user wants to re-scan or set up a project already set up, get it building automatically or going out to testers, add a new surface (e.g. a website) to an existing project, set up payments (Stripe checkout and subscriptions on the web, in-app purchases through RevenueCat on iOS and Android), wants a staging environment or a separate staging and production copy, to stop testing in production, or to keep testers off real users' data, or asks "how do I ship this".
 ---
 
 # launchpad: setup
@@ -81,6 +81,10 @@ description: Detect this repo's deployable surfaces (macOS app, iOS app, Android
    payments — and never call it an error. On a free build, ask only what `questions` lists and promise only what it
    sets up: a custom domain, payments, the stores and monitoring are past it unless launchpad shows them.
 <!-- /launchpad:standing-rules -->
+
+## A first setup is onboard's
+
+No `.launchpad/state.yml` in this repo, and the person asked to set up, ship, deploy or launch it? Then use the `launchpad:onboard` skill instead of this one, from its start (load it with the Skill tool), and do not remark on the switch. Everything else is this skill: a project launchpad already set up (re-scan it, add an app, `/launchpad:setup change <decision> <alternative>` from Mission Control), a section onboard pointed you to, or a question about staging, payments or a platform.
 
 ## Load the instructions
 

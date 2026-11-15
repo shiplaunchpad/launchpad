@@ -1,28 +1,22 @@
 {
   "schema": 1,
-  "version": "0.1.30",
-  "published": "2026-11-14",
-  "summary": "launchpad makes your Cloudflare site itself, calls your app by its real name, and fixes iPhone and Android snags.",
+  "version": "0.1.31",
+  "published": "2026-11-15",
+  "summary": "Tell Claude something is broken and launchpad's doctor steps in, and a first setup always starts with onboard.",
   "notes": [
-    "Storing a key no longer asks you to make up a passphrase on Windows or Linux. launchpad makes its own key for its vault.",
-    "For a static site, launchpad creates the Cloudflare Pages project with your token, and your first push publishes the site.",
-    "Your app shows up under its real name, from its page title, its Xcode project or its Android app name, instead of a folder called app.",
-    "iPhone apps: the app ID you pick is written into your Xcode project, and a release no longer runs Swift package tests that only build for iPhone.",
-    "Android: adding a tester finds the Firebase key you stored for that app, and the build check picks the right pnpm version for your repo."
+    "Saying “it's broken” or “it stopped working” now brings in launchpad's doctor, which reads what went wrong before it changes anything.",
+    "Typing /launchpad:setup in a new project now starts onboard, so you get the same first look and questions as /launchpad:onboard."
   ],
   "minimum": "0.1.22",
   "criticalBelow": "0.1.22",
   "channels": {
     "release": {
-      "version": "0.1.30",
-      "published": "2026-11-14",
-      "summary": "launchpad makes your Cloudflare site itself, calls your app by its real name, and fixes iPhone and Android snags.",
+      "version": "0.1.31",
+      "published": "2026-11-15",
+      "summary": "Tell Claude something is broken and launchpad's doctor steps in, and a first setup always starts with onboard.",
       "notes": [
-        "Storing a key no longer asks you to make up a passphrase on Windows or Linux. launchpad makes its own key for its vault.",
-        "For a static site, launchpad creates the Cloudflare Pages project with your token, and your first push publishes the site.",
-        "Your app shows up under its real name, from its page title, its Xcode project or its Android app name, instead of a folder called app.",
-        "iPhone apps: the app ID you pick is written into your Xcode project, and a release no longer runs Swift package tests that only build for iPhone.",
-        "Android: adding a tester finds the Firebase key you stored for that app, and the build check picks the right pnpm version for your repo."
+        "Saying “it's broken” or “it stopped working” now brings in launchpad's doctor, which reads what went wrong before it changes anything.",
+        "Typing /launchpad:setup in a new project now starts onboard, so you get the same first look and questions as /launchpad:onboard."
       ],
       "minimum": "0.1.22"
     },

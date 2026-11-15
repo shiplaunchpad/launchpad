@@ -1,6 +1,6 @@
 ---
 name: doctor
-description: Find out why something is not working — the app, a build, a deploy, or launchpad itself — by running `launchpad report` first, and check or store the credentials launchpad needs in the vault (App Store Connect key, Developer ID cert, Android keystore, Firebase, Cloudflare, Vercel). Use when the user says it's broken, it's not working, it stopped working, or just asks for help, even when they have not said what "it" is — run `report` before asking them anything: it reads this repo and says what is wrong, so the first reply opens with what it found instead of a list of questions. Also use when they want to set up credentials, add an env var or API key the app reads, fix a missing secret, or work out why a deploy or build can't authenticate.
+description: "Find out why something is not working — the app, a build, a deploy, or launchpad itself — by running `launchpad report` first, and check or store the credentials launchpad needs in the vault (App Store Connect key, Developer ID cert, Android keystore, Firebase, Cloudflare, Vercel). Use when the user says it's broken, it's not working, it stopped working, or just asks for help, even when they have not said what \"it\" is — run `report` before asking them anything: it reads this repo and says what is wrong, so the first reply opens with what it found instead of a list of questions. Also use when they want to set up credentials, add an env var or API key the app reads, fix a missing secret, or work out why a deploy or build can't authenticate."
 ---
 
 # launchpad: doctor
