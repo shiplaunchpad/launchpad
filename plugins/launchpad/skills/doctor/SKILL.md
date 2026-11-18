@@ -80,6 +80,9 @@ description: "Find out why something is not working — the app, a build, a depl
    Never build the refused part by hand or another way — not the pipeline, the signing, the store step or the
    payments — and never call it an error. On a free build, ask only what `questions` lists and promise only what it
    sets up: a custom domain, payments, the stores and monitoring are past it unless launchpad shows them.
+   **One exit 3 is not the edge: the email.** When it printed that the free build waits on the owner's email, ask
+   for the address in this chat, in launchpad's words as printed, run the `trial email` command it printed with
+   their answer, ask for the 6-digit code, run `trial verify` with it, then run the stopped command again.
 <!-- /launchpad:standing-rules -->
 
 ## Load the instructions

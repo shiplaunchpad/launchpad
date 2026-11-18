@@ -1,22 +1,28 @@
 {
   "schema": 1,
-  "version": "0.1.31",
-  "published": "2026-11-15",
-  "summary": "Tell Claude something is broken and launchpad's doctor steps in, and a first setup always starts with onboard.",
+  "version": "0.1.32",
+  "published": "2026-11-18",
+  "summary": "A smoother first run: Mission Control stays open, and Claude asks for your email right in the chat.",
   "notes": [
-    "Saying “it's broken” or “it stopped working” now brings in launchpad's doctor, which reads what went wrong before it changes anything.",
-    "Typing /launchpad:setup in a new project now starts onboard, so you get the same first look and questions as /launchpad:onboard."
+    "The first time you run launchpad, Mission Control opens and stays open. Before, two commands starting together could close it.",
+    "On a free build, Claude asks for your email in the chat and confirms it with the 6-digit code right there.",
+    "If launchpad can't build your app yet, like a Capacitor app, your free build isn't used up. It stays yours for another app.",
+    "Google Play apps get a card for getting your builds onto your phone, and Expo iOS apps get the iPhone one.",
+    "Claude tells you when a newer launchpad is out, so you're not stuck on an old version."
   ],
   "minimum": "0.1.22",
   "criticalBelow": "0.1.22",
   "channels": {
     "release": {
-      "version": "0.1.31",
-      "published": "2026-11-15",
-      "summary": "Tell Claude something is broken and launchpad's doctor steps in, and a first setup always starts with onboard.",
+      "version": "0.1.32",
+      "published": "2026-11-18",
+      "summary": "A smoother first run: Mission Control stays open, and Claude asks for your email right in the chat.",
       "notes": [
-        "Saying “it's broken” or “it stopped working” now brings in launchpad's doctor, which reads what went wrong before it changes anything.",
-        "Typing /launchpad:setup in a new project now starts onboard, so you get the same first look and questions as /launchpad:onboard."
+        "The first time you run launchpad, Mission Control opens and stays open. Before, two commands starting together could close it.",
+        "On a free build, Claude asks for your email in the chat and confirms it with the 6-digit code right there.",
+        "If launchpad can't build your app yet, like a Capacitor app, your free build isn't used up. It stays yours for another app.",
+        "Google Play apps get a card for getting your builds onto your phone, and Expo iOS apps get the iPhone one.",
+        "Claude tells you when a newer launchpad is out, so you're not stuck on an old version."
       ],
       "minimum": "0.1.22"
     },
