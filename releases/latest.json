@@ -1,28 +1,22 @@
 {
   "schema": 1,
-  "version": "0.1.32",
+  "version": "0.1.33",
   "published": "2026-11-18",
-  "summary": "A smoother first run: Mission Control stays open, and Claude asks for your email right in the chat.",
+  "summary": "Apps launchpad doesn't build, like a Capacitor iPhone app, no longer show a release blocker you can't clear.",
   "notes": [
-    "The first time you run launchpad, Mission Control opens and stays open. Before, two commands starting together could close it.",
-    "On a free build, Claude asks for your email in the chat and confirms it with the 6-digit code right there.",
-    "If launchpad can't build your app yet, like a Capacitor app, your free build isn't used up. It stays yours for another app.",
-    "Google Play apps get a card for getting your builds onto your phone, and Expo iOS apps get the iPhone one.",
-    "Claude tells you when a newer launchpad is out, so you're not stuck on an old version."
+    "If launchpad doesn't build part of your app, like a Capacitor iPhone app, Mission Control says so once and Mark done closes it.",
+    "That card no longer shows as a release blocker or as something launchpad will do next run, and it isn't counted in your to dos."
   ],
   "minimum": "0.1.22",
   "criticalBelow": "0.1.22",
   "channels": {
     "release": {
-      "version": "0.1.32",
+      "version": "0.1.33",
       "published": "2026-11-18",
-      "summary": "A smoother first run: Mission Control stays open, and Claude asks for your email right in the chat.",
+      "summary": "Apps launchpad doesn't build, like a Capacitor iPhone app, no longer show a release blocker you can't clear.",
       "notes": [
-        "The first time you run launchpad, Mission Control opens and stays open. Before, two commands starting together could close it.",
-        "On a free build, Claude asks for your email in the chat and confirms it with the 6-digit code right there.",
-        "If launchpad can't build your app yet, like a Capacitor app, your free build isn't used up. It stays yours for another app.",
-        "Google Play apps get a card for getting your builds onto your phone, and Expo iOS apps get the iPhone one.",
-        "Claude tells you when a newer launchpad is out, so you're not stuck on an old version."
+        "If launchpad doesn't build part of your app, like a Capacitor iPhone app, Mission Control says so once and Mark done closes it.",
+        "That card no longer shows as a release blocker or as something launchpad will do next run, and it isn't counted in your to dos."
       ],
       "minimum": "0.1.22"
     },
