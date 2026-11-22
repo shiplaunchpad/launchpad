@@ -1,22 +1,28 @@
 {
   "schema": 1,
-  "version": "0.1.33",
-  "published": "2026-11-18",
-  "summary": "Apps launchpad doesn't build, like a Capacitor iPhone app, no longer show a release blocker you can't clear.",
+  "version": "0.1.34",
+  "published": "2026-11-22",
+  "summary": "Capacitor apps now build for iPhone and Android, and Mission Control shows one count you can trust.",
   "notes": [
-    "If launchpad doesn't build part of your app, like a Capacitor iPhone app, Mission Control says so once and Mark done closes it.",
-    "That card no longer shows as a release blocker or as something launchpad will do next run, and it isn't counted in your to dos."
+    "launchpad now builds Capacitor apps: a signed Android release for Google Play and an iPhone archive, with your web app inside.",
+    "Mission Control shows the same count everywhere: the banner, the progress bar and the Checklist tab.",
+    "After you buy a key, a notice says what it added and why your Remaining number went up.",
+    "Your free build stays with the app you started it in, and it only asks for keys the parts it builds actually use.",
+    "If a launchpad settings file gets damaged, launchpad keeps it aside instead of overwriting it, so your saved keys and apps aren't lost."
   ],
   "minimum": "0.1.22",
   "criticalBelow": "0.1.22",
   "channels": {
     "release": {
-      "version": "0.1.33",
-      "published": "2026-11-18",
-      "summary": "Apps launchpad doesn't build, like a Capacitor iPhone app, no longer show a release blocker you can't clear.",
+      "version": "0.1.34",
+      "published": "2026-11-22",
+      "summary": "Capacitor apps now build for iPhone and Android, and Mission Control shows one count you can trust.",
       "notes": [
-        "If launchpad doesn't build part of your app, like a Capacitor iPhone app, Mission Control says so once and Mark done closes it.",
-        "That card no longer shows as a release blocker or as something launchpad will do next run, and it isn't counted in your to dos."
+        "launchpad now builds Capacitor apps: a signed Android release for Google Play and an iPhone archive, with your web app inside.",
+        "Mission Control shows the same count everywhere: the banner, the progress bar and the Checklist tab.",
+        "After you buy a key, a notice says what it added and why your Remaining number went up.",
+        "Your free build stays with the app you started it in, and it only asks for keys the parts it builds actually use.",
+        "If a launchpad settings file gets damaged, launchpad keeps it aside instead of overwriting it, so your saved keys and apps aren't lost."
       ],
       "minimum": "0.1.22"
     },

@@ -28,6 +28,7 @@ launchpad ships six kinds of app — iOS app, Android app, macOS app (DMG), Web 
 | Android (Kotlin / Java) | Android app | Firebase App Distribution on a push, and the AAB Play wants kept on every build. |
 | React Native | iOS app + Android app | TestFlight and the App Store for iOS; Firebase App Distribution for Android. |
 | Expo | iOS app + Android app | TestFlight and the App Store for iOS; Firebase App Distribution for Android — or, on EAS Build, EAS's install links and its submission to both stores. |
+| Capacitor / Ionic | iOS app + Android app | TestFlight and the App Store for iOS; Firebase App Distribution for Android, and a Play testing track if you choose — from the Xcode and Android projects Capacitor generates around your web build. The web too, when you publish it there. |
 | Cloudflare Worker | Backend service | Cloudflare Workers — a deploy on every push, staging as its own Worker, and its own cron triggers and queues. |
 | Hono, itty-router | Backend service | Cloudflare Workers or Google Cloud Run |
 | Express, Fastify, NestJS, Koa, hapi, Elysia, Go HTTP server, Python web service, Containerised service | Backend service | Google Cloud Run |
@@ -35,8 +36,6 @@ launchpad ships six kinds of app — iOS app, Android app, macOS app (DMG), Web 
 Where a stack has a limit, `/launchpad:status` says so for your app.
 
 **Recognised, with no pipeline yet.** launchpad scores these and shows them on Mission Control, and says that it has no pipeline to write: Tauri desktop app, Electron desktop app, Swift package, Ruby on Rails app, Django app, WordPress site, Laravel app, Phoenix app, Elixir project, Rust project, Go project, Python package, Ruby gem, .NET project, JVM project, Deno app, Wasp app, Browser extension, Node CLI, Node package.
-
-**Not supported yet:** Capacitor / Ionic.
 <!-- launchpad:platforms:end -->
 
 A repository can hold several of these; launchpad finds each app in it. Every pipeline is a GitHub Actions workflow,
