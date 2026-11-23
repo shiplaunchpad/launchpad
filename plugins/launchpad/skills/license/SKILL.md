@@ -1,6 +1,12 @@
 ---
 name: license
 description: Licensing and provenance — activate a launchpad license, check it, release a machine, and report which build is running. Use when someone asks about buying, activating, "needs a license", an activation limit, or which version of launchpad this is.
+allowed-tools:
+  - 'Bash(node "${CLAUDE_PLUGIN_ROOT}/dist/launchpad.mjs" license)'
+  - 'Bash(node "${CLAUDE_PLUGIN_ROOT}/dist/launchpad.mjs" version)'
+  - 'Bash(node "${CLAUDE_PLUGIN_ROOT}/dist/launchpad.mjs" guide license *)'
+  - 'Bash(node "${CLAUDE_PLUGIN_ROOT}/dist/launchpad.mjs" trial)'
+  - 'Bash(node "${CLAUDE_PLUGIN_ROOT}/dist/launchpad.mjs" trial --json)'
 ---
 
 # launchpad: license
@@ -100,7 +106,7 @@ When the user gives you a key, run the first one with it and relay what it print
 
 ## Load the instructions
 
-This skill's full instructions are part of launchpad itself, which is installed on this machine when a license key is activated. Load them now and follow them exactly as if they were written here:
+This skill's full instructions are part of launchpad itself, which launchpad sends to this computer — all of them with a key, and the free build's part on a free build. Load them now and follow them exactly as if they were written here:
 
 ```bash
 node "${CLAUDE_PLUGIN_ROOT}/dist/launchpad.mjs" guide license
@@ -109,5 +115,6 @@ node "${CLAUDE_PLUGIN_ROOT}/dist/launchpad.mjs" guide license
 Run every launchpad command exactly as written — `node "<the path>" <verb>`, the path in double quotes, here and in the guide. Never put `node …` in a shell variable: `L="node …"; $L status` is one word in zsh and fails (exit 127). To shorten the path, `L="<the path>"; node "$L" <verb>`.
 
 - **It prints the instructions (exit 0):** they ARE this skill, even if your shell adds an error status after them; nothing below applies. A long guide prints its opening and a numbered contents with each section's size: before acting, print every section the request touches — `guide license <number>`, several in one print `guide license <from>-<to>`, or `guide license <words from its title>` — and follow them as if written here. Looking for one thing (a word, a file, a setting)? `guide license --find "<words>"` prints the section that mentions it, whole, in one print — never page through the parts to search.
-- **It says a license is needed (exit 2):** relay what it printed — what launchpad is, how to activate a key (the key is in the receipt email; `/launchpad:license <key>` answers "Unlocked: launchpad <version> pack installed."), and where to get one. Nothing of launchpad runs before that. Do not improvise these steps from general knowledge: a hand-written pipeline is one launchpad cannot keep working, and it is what the user would be buying.
-- **It says the pack could not be fetched (exit 1):** relay that. Running `/launchpad:license` again when online fetches it with the stored key, without using another seat.
+- **It says a license is needed (exit 2):** relay what it printed — what launchpad is, how to activate a key (the key is in the receipt email; `/launchpad:license <key>` answers "Unlocked: launchpad <version> pack installed."), and where to get one. When it also says why no free build started here, say that first, in its words. Do not improvise these steps from general knowledge: a hand-written pipeline is one launchpad cannot keep working, and it is what the user would be buying.
+- **It says the pack could not be fetched (exit 1):** relay that. On a computer with a key, running `/launchpad:license` again when online fetches it with the stored key, without using another seat.
+- **It says "No free build here" because launchpad could not reach its server (exit 1, no key on this computer):** say in one line that launchpad could not connect to start the free build, that nothing changed, and to run it again once online. Never say a key is needed because of it.

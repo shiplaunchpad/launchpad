@@ -1,6 +1,17 @@
 ---
 name: onboard
 description: Take an app from "it runs on my machine" to shipped — interview the user, then wire the build, signing, distribution, paywall and landing page for every surface in the repo. Use when someone wants to launch, ship, deploy or productionize an app for the first time, is about to start charging for something they built, wants people to be able to pay (subscriptions, in-app purchases, a paywall, Stripe or RevenueCat), wants staging and production set up properly before real users arrive, or asks what it would take to release it.
+allowed-tools:
+  - 'Bash(node "${CLAUDE_PLUGIN_ROOT}/dist/launchpad.mjs" status *)'
+  - 'Bash(node "${CLAUDE_PLUGIN_ROOT}/dist/launchpad.mjs" guide *)'
+  - 'Bash(node "${CLAUDE_PLUGIN_ROOT}/dist/launchpad.mjs" score *)'
+  - 'Bash(node "${CLAUDE_PLUGIN_ROOT}/dist/launchpad.mjs" needs *)'
+  - 'Bash(node "${CLAUDE_PLUGIN_ROOT}/dist/launchpad.mjs" questions)'
+  - 'Bash(node "${CLAUDE_PLUGIN_ROOT}/dist/launchpad.mjs" questions --json)'
+  - 'Bash(node "${CLAUDE_PLUGIN_ROOT}/dist/launchpad.mjs" trial)'
+  - 'Bash(node "${CLAUDE_PLUGIN_ROOT}/dist/launchpad.mjs" trial --json)'
+  - 'Bash(node "${CLAUDE_PLUGIN_ROOT}/dist/launchpad.mjs" detect)'
+  - 'Bash(node "${CLAUDE_PLUGIN_ROOT}/dist/launchpad.mjs" dashboard --open=*)'
 ---
 
 # launchpad: onboard
@@ -87,10 +98,15 @@ description: Take an app from "it runs on my machine" to shipped — interview t
 
 ## Load the instructions
 
-This skill's full instructions are part of launchpad itself, which is installed on this machine when a license key is activated. Load them now — every line, in this order — and follow them exactly as if they were written here:
+First, start Mission Control — run this as a command of its own and wait for it: it starts Mission Control as a process of its own and returns in a few seconds with its address, or with why it could not open. Never add `&`, `>/dev/null`, `2>&1` or your Bash tool's `run_in_background`. When it printed an address, say one line: "Mission Control is open on this project; it updates as I work." When it could not open, say so right then in one short line and carry on — nothing else needs it, and your first reply never mentions it again.
 
 ```bash
-node "${CLAUDE_PLUGIN_ROOT}/dist/launchpad.mjs" dashboard --open=project --project=. >/dev/null 2>&1 &   # Mission Control first, in the background — then say "Mission Control is open on this project; it updates as I work."
+node "${CLAUDE_PLUGIN_ROOT}/dist/launchpad.mjs" dashboard --open=project --project=. --detach
+```
+
+This skill's full instructions are part of launchpad itself, which launchpad sends to this computer — all of them with a key, and the free build's part on a free build. Load them now — both lines, in this order, each as its own command (never joined with `&&`, `;` or `&`) — and follow them exactly as if they were written here:
+
+```bash
 node "${CLAUDE_PLUGIN_ROOT}/dist/launchpad.mjs" status          # 4 lines: where this project stands — read before you change or answer anything
 node "${CLAUDE_PLUGIN_ROOT}/dist/launchpad.mjs" guide onboard
 ```
@@ -98,5 +114,6 @@ node "${CLAUDE_PLUGIN_ROOT}/dist/launchpad.mjs" guide onboard
 Run every launchpad command exactly as written — `node "<the path>" <verb>`, the path in double quotes, here and in the guide. Never put `node …` in a shell variable: `L="node …"; $L status` is one word in zsh and fails (exit 127). To shorten the path, `L="<the path>"; node "$L" <verb>`.
 
 - **`guide` prints the instructions (exit 0):** they ARE this skill, even if your shell adds an error status after them; nothing below applies. A long guide prints its opening and a numbered contents with each section's size: before acting, print every section the request touches — `guide onboard <number>`, several in one print `guide onboard <from>-<to>`, or `guide onboard <words from its title>` — and follow them as if written here. Looking for one thing (a word, a file, a setting)? `guide onboard --find "<words>"` prints the section that mentions it, whole, in one print — never page through the parts to search.
-- **It says a license is needed (exit 2):** relay what it printed — what launchpad is, how to activate a key (the key is in the receipt email; `/launchpad:license <key>` answers "Unlocked: launchpad <version> pack installed."), and where to get one. Nothing of launchpad runs before that. Do not improvise these steps from general knowledge: a hand-written pipeline is one launchpad cannot keep working, and it is what the user would be buying.
-- **It says the pack could not be fetched (exit 1):** relay that. Running `/launchpad:license` again when online fetches it with the stored key, without using another seat.
+- **It says a license is needed (exit 2):** relay what it printed — what launchpad is, how to activate a key (the key is in the receipt email; `/launchpad:license <key>` answers "Unlocked: launchpad <version> pack installed."), and where to get one. When it also says why no free build started here, say that first, in its words. Do not improvise these steps from general knowledge: a hand-written pipeline is one launchpad cannot keep working, and it is what the user would be buying.
+- **It says the pack could not be fetched (exit 1):** relay that. On a computer with a key, running `/launchpad:license` again when online fetches it with the stored key, without using another seat.
+- **It says "No free build here" because launchpad could not reach its server (exit 1, no key on this computer):** say in one line that launchpad could not connect to start the free build, that nothing changed, and to run it again once online. Never say a key is needed because of it.

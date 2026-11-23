@@ -1,28 +1,22 @@
 {
   "schema": 1,
-  "version": "0.1.34",
-  "published": "2026-11-22",
-  "summary": "Capacitor apps now build for iPhone and Android, and Mission Control shows one count you can trust.",
+  "version": "0.1.35",
+  "published": "2026-11-23",
+  "summary": "Bug fixes and improvements to the free first build and Mission Control.",
   "notes": [
-    "launchpad now builds Capacitor apps: a signed Android release for Google Play and an iPhone archive, with your web app inside.",
-    "Mission Control shows the same count everywhere: the banner, the progress bar and the Checklist tab.",
-    "After you buy a key, a notice says what it added and why your Remaining number went up.",
-    "Your free build stays with the app you started it in, and it only asks for keys the parts it builds actually use.",
-    "If a launchpad settings file gets damaged, launchpad keeps it aside instead of overwriting it, so your saved keys and apps aren't lost."
+    "Bug fixes and improvements to the free first build.",
+    "Bug fixes and improvements to Mission Control and update notices."
   ],
   "minimum": "0.1.22",
   "criticalBelow": "0.1.22",
   "channels": {
     "release": {
-      "version": "0.1.34",
-      "published": "2026-11-22",
-      "summary": "Capacitor apps now build for iPhone and Android, and Mission Control shows one count you can trust.",
+      "version": "0.1.35",
+      "published": "2026-11-23",
+      "summary": "Bug fixes and improvements to the free first build and Mission Control.",
       "notes": [
-        "launchpad now builds Capacitor apps: a signed Android release for Google Play and an iPhone archive, with your web app inside.",
-        "Mission Control shows the same count everywhere: the banner, the progress bar and the Checklist tab.",
-        "After you buy a key, a notice says what it added and why your Remaining number went up.",
-        "Your free build stays with the app you started it in, and it only asks for keys the parts it builds actually use.",
-        "If a launchpad settings file gets damaged, launchpad keeps it aside instead of overwriting it, so your saved keys and apps aren't lost."
+        "Bug fixes and improvements to the free first build.",
+        "Bug fixes and improvements to Mission Control and update notices."
       ],
       "minimum": "0.1.22"
     },

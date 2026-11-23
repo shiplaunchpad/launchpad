@@ -1,6 +1,17 @@
 ---
 name: setup
 description: Re-scan, extend or change a project's launchpad pipeline (Mac, iPhone, Android, web, static site; a first setup is /launchpad:onboard), including a staging environment beside production. Use when the user wants to re-scan or set up a project already set up, get it building automatically or going out to testers, add a new surface (e.g. a website) to an existing project, set up payments (Stripe checkout and subscriptions on the web, in-app purchases through RevenueCat on iOS and Android), wants a staging environment or a separate staging and production copy, to stop testing in production, or to keep testers off real users' data, or asks "how do I ship this".
+allowed-tools:
+  - 'Bash(node "${CLAUDE_PLUGIN_ROOT}/dist/launchpad.mjs" status *)'
+  - 'Bash(node "${CLAUDE_PLUGIN_ROOT}/dist/launchpad.mjs" guide *)'
+  - 'Bash(node "${CLAUDE_PLUGIN_ROOT}/dist/launchpad.mjs" score *)'
+  - 'Bash(node "${CLAUDE_PLUGIN_ROOT}/dist/launchpad.mjs" needs *)'
+  - 'Bash(node "${CLAUDE_PLUGIN_ROOT}/dist/launchpad.mjs" questions)'
+  - 'Bash(node "${CLAUDE_PLUGIN_ROOT}/dist/launchpad.mjs" questions --json)'
+  - 'Bash(node "${CLAUDE_PLUGIN_ROOT}/dist/launchpad.mjs" trial)'
+  - 'Bash(node "${CLAUDE_PLUGIN_ROOT}/dist/launchpad.mjs" trial --json)'
+  - 'Bash(node "${CLAUDE_PLUGIN_ROOT}/dist/launchpad.mjs" detect)'
+  - 'Bash(node "${CLAUDE_PLUGIN_ROOT}/dist/launchpad.mjs" dashboard --open=*)'
 ---
 
 # launchpad: setup
@@ -91,7 +102,7 @@ No `.launchpad/state.yml` in this repo, and the person asked to set up, ship, de
 
 ## Load the instructions
 
-This skill's full instructions are part of launchpad itself, which is installed on this machine when a license key is activated. Load them now — both lines, in this order — and follow them exactly as if they were written here:
+This skill's full instructions are part of launchpad itself, which launchpad sends to this computer — all of them with a key, and the free build's part on a free build. Load them now — both lines, in this order, each as its own command (never joined with `&&`, `;` or `&`) — and follow them exactly as if they were written here:
 
 ```bash
 node "${CLAUDE_PLUGIN_ROOT}/dist/launchpad.mjs" status          # 4 lines: where this project stands — read before you change or answer anything
@@ -101,5 +112,6 @@ node "${CLAUDE_PLUGIN_ROOT}/dist/launchpad.mjs" guide setup
 Run every launchpad command exactly as written — `node "<the path>" <verb>`, the path in double quotes, here and in the guide. Never put `node …` in a shell variable: `L="node …"; $L status` is one word in zsh and fails (exit 127). To shorten the path, `L="<the path>"; node "$L" <verb>`.
 
 - **`guide` prints the instructions (exit 0):** they ARE this skill, even if your shell adds an error status after them; nothing below applies. A long guide prints its opening and a numbered contents with each section's size: before acting, print every section the request touches — `guide setup <number>`, several in one print `guide setup <from>-<to>`, or `guide setup <words from its title>` — and follow them as if written here. Looking for one thing (a word, a file, a setting)? `guide setup --find "<words>"` prints the section that mentions it, whole, in one print — never page through the parts to search.
-- **It says a license is needed (exit 2):** relay what it printed — what launchpad is, how to activate a key (the key is in the receipt email; `/launchpad:license <key>` answers "Unlocked: launchpad <version> pack installed."), and where to get one. Nothing of launchpad runs before that. Do not improvise these steps from general knowledge: a hand-written pipeline is one launchpad cannot keep working, and it is what the user would be buying.
-- **It says the pack could not be fetched (exit 1):** relay that. Running `/launchpad:license` again when online fetches it with the stored key, without using another seat.
+- **It says a license is needed (exit 2):** relay what it printed — what launchpad is, how to activate a key (the key is in the receipt email; `/launchpad:license <key>` answers "Unlocked: launchpad <version> pack installed."), and where to get one. When it also says why no free build started here, say that first, in its words. Do not improvise these steps from general knowledge: a hand-written pipeline is one launchpad cannot keep working, and it is what the user would be buying.
+- **It says the pack could not be fetched (exit 1):** relay that. On a computer with a key, running `/launchpad:license` again when online fetches it with the stored key, without using another seat.
+- **It says "No free build here" because launchpad could not reach its server (exit 1, no key on this computer):** say in one line that launchpad could not connect to start the free build, that nothing changed, and to run it again once online. Never say a key is needed because of it.
