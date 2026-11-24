@@ -1,22 +1,24 @@
 {
   "schema": 1,
-  "version": "0.1.35",
-  "published": "2026-11-23",
+  "version": "0.1.36",
+  "published": "2026-11-24",
   "summary": "Bug fixes and improvements to the free first build and Mission Control.",
   "notes": [
     "Bug fixes and improvements to the free first build.",
-    "Bug fixes and improvements to Mission Control and update notices."
+    "Bug fixes and improvements to Mission Control.",
+    "Bug fixes and improvements to offline and update messages."
   ],
   "minimum": "0.1.22",
   "criticalBelow": "0.1.22",
   "channels": {
     "release": {
-      "version": "0.1.35",
-      "published": "2026-11-23",
+      "version": "0.1.36",
+      "published": "2026-11-24",
       "summary": "Bug fixes and improvements to the free first build and Mission Control.",
       "notes": [
         "Bug fixes and improvements to the free first build.",
-        "Bug fixes and improvements to Mission Control and update notices."
+        "Bug fixes and improvements to Mission Control.",
+        "Bug fixes and improvements to offline and update messages."
       ],
       "minimum": "0.1.22"
     },
