@@ -12,6 +12,9 @@ allowed-tools:
   - 'Bash(node "${CLAUDE_PLUGIN_ROOT}/dist/launchpad.mjs" trial --json)'
   - 'Bash(node "${CLAUDE_PLUGIN_ROOT}/dist/launchpad.mjs" detect)'
   - 'Bash(node "${CLAUDE_PLUGIN_ROOT}/dist/launchpad.mjs" dashboard --open=*)'
+  - 'Bash(node "${CLAUDE_PLUGIN_ROOT}/dist/launchpad.mjs" projects)'
+  - 'Bash(node "${CLAUDE_PLUGIN_ROOT}/dist/launchpad.mjs" decisions)'
+  - 'Bash(node "${CLAUDE_PLUGIN_ROOT}/dist/launchpad.mjs" decisions --json)'
 ---
 
 # launchpad: status

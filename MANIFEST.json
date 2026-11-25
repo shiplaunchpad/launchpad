@@ -1,12 +1,12 @@
 {
-  "version": "0.1.36",
+  "version": "0.1.37",
   "channel": "release",
   "files": 16,
-  "built": "2026-11-24T15:45:15.891Z",
+  "built": "2026-11-25T20:28:40.353Z",
   "bundle": {
     "path": "plugins/launchpad/dist/launchpad.mjs",
-    "bytes": 72939,
-    "sha256": "e14c166d9fc2642714d05047adc8b5db4dd75285d1191392eb72bea92a45ff66"
+    "bytes": 76097,
+    "sha256": "8f1918d55fbbcd99c7a5357fe7f12a06f1b15bdcc9598e5bfb94958934f59ef6"
   },
   "pack": {
     "signing": "release",

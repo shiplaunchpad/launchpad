@@ -12,6 +12,8 @@ allowed-tools:
   - 'Bash(node "${CLAUDE_PLUGIN_ROOT}/dist/launchpad.mjs" trial --json)'
   - 'Bash(node "${CLAUDE_PLUGIN_ROOT}/dist/launchpad.mjs" detect)'
   - 'Bash(node "${CLAUDE_PLUGIN_ROOT}/dist/launchpad.mjs" dashboard --open=*)'
+  - 'Bash(node "${CLAUDE_PLUGIN_ROOT}/dist/launchpad.mjs" doctor)'
+  - 'Bash(node "${CLAUDE_PLUGIN_ROOT}/dist/launchpad.mjs" report)'
 ---
 
 # launchpad: doctor

@@ -12,6 +12,12 @@ allowed-tools:
   - 'Bash(node "${CLAUDE_PLUGIN_ROOT}/dist/launchpad.mjs" trial --json)'
   - 'Bash(node "${CLAUDE_PLUGIN_ROOT}/dist/launchpad.mjs" detect)'
   - 'Bash(node "${CLAUDE_PLUGIN_ROOT}/dist/launchpad.mjs" dashboard --open=*)'
+  - 'Bash(node "${CLAUDE_PLUGIN_ROOT}/dist/launchpad.mjs" release)'
+  - 'Bash(node "${CLAUDE_PLUGIN_ROOT}/dist/launchpad.mjs" release --json)'
+  - 'Bash(node "${CLAUDE_PLUGIN_ROOT}/dist/launchpad.mjs" release --local --dry-run)'
+  - 'Bash(node "${CLAUDE_PLUGIN_ROOT}/dist/launchpad.mjs" apple testflight)'
+  - 'Bash(node "${CLAUDE_PLUGIN_ROOT}/dist/launchpad.mjs" apple review)'
+  - 'Bash(node "${CLAUDE_PLUGIN_ROOT}/dist/launchpad.mjs" apple submit)'
 ---
 
 # launchpad: release

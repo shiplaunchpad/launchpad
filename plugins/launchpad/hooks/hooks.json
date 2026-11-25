@@ -1,5 +1,5 @@
 {
-  "description": "launchpad: tell an open Claude session what changed in Mission Control since its last step (one line; silent otherwise), and, on a free build, what is and is not on this computer.",
+  "description": "launchpad: when a session opens in an app launchpad knows, make sure Mission Control is running and show its next step and address; tell an open Claude session what changed in Mission Control since its last step (one line; silent otherwise); and, on a free build, what is and is not on this computer.",
   "hooks": {
     "SessionStart": [
       {

@@ -1,24 +1,28 @@
 {
   "schema": 1,
-  "version": "0.1.36",
-  "published": "2026-11-24",
-  "summary": "Bug fixes and improvements to the free first build and Mission Control.",
+  "version": "0.1.37",
+  "published": "2026-11-25",
+  "summary": "Mission Control stays on, comes back with any launchpad command, and always has a way to enter your key.",
   "notes": [
-    "Bug fixes and improvements to the free first build.",
-    "Bug fixes and improvements to Mission Control.",
-    "Bug fixes and improvements to offline and update messages."
+    "Mission Control stays on after Claude Code closes, and every launchpad command brings it back.",
+    "Already bought launchpad? Mission Control has an Activate link in its top bar.",
+    "Mission Control's windows now come one after another instead of waiting for your next visit.",
+    "Onboarding skips steps it already finished and keeps the email you typed in the chat.",
+    "Fixes for a second app on the free build, offline messages and the header on smaller windows."
   ],
   "minimum": "0.1.22",
   "criticalBelow": "0.1.22",
   "channels": {
     "release": {
-      "version": "0.1.36",
-      "published": "2026-11-24",
-      "summary": "Bug fixes and improvements to the free first build and Mission Control.",
+      "version": "0.1.37",
+      "published": "2026-11-25",
+      "summary": "Mission Control stays on, comes back with any launchpad command, and always has a way to enter your key.",
       "notes": [
-        "Bug fixes and improvements to the free first build.",
-        "Bug fixes and improvements to Mission Control.",
-        "Bug fixes and improvements to offline and update messages."
+        "Mission Control stays on after Claude Code closes, and every launchpad command brings it back.",
+        "Already bought launchpad? Mission Control has an Activate link in its top bar.",
+        "Mission Control's windows now come one after another instead of waiting for your next visit.",
+        "Onboarding skips steps it already finished and keeps the email you typed in the chat.",
+        "Fixes for a second app on the free build, offline messages and the header on smaller windows."
       ],
       "minimum": "0.1.22"
     },
